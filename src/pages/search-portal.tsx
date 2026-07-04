@@ -5,7 +5,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { searchStudent, type StudentResult, GRADING_SCALE, CURRENT_TERM, TOTAL_STUDENTS } from "@/data/students";
+import { searchStudent, type StudentResult, GRADING_SCALE } from "@/data/students";
 import { Card } from "@/components/ui/card";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 
