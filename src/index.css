@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+@import "tw-animate-css";
+@plugin "@tailwindcss/typography";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --color-card-border: hsl(var(--card-border));
+
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+  --color-popover-border: hsl(var(--popover-border));
+
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-primary-border: var(--primary-border);
+
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-secondary-border: var(--secondary-border);
+
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-muted-border: var(--muted-border);
+
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-accent-border: var(--accent-border);
+
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+  --color-destructive-border: var(--destructive-border);
+
+  --color-chart-1: hsl(var(--chart-1));
+  --color-chart-2: hsl(var(--chart-2));
+  --color-chart-3: hsl(var(--chart-3));
+  --color-chart-4: hsl(var(--chart-4));
+  --color-chart-5: hsl(var(--chart-5));
+
+  --color-sidebar: hsl(var(--sidebar));
+  --color-sidebar-foreground: hsl(var(--sidebar-foreground));
+  --color-sidebar-border: hsl(var(--sidebar-border));
+  --color-sidebar-primary: hsl(var(--sidebar-primary));
+  --color-sidebar-primary-foreground: hsl(var(--sidebar-primary-foreground));
+  --color-sidebar-primary-border: var(--sidebar-primary-border);
+  --color-sidebar-accent: hsl(var(--sidebar-accent));
+  --color-sidebar-accent-foreground: hsl(var(--sidebar-accent-foreground));
+  --color-sidebar-accent-border: var(--sidebar-accent-border);
+  --color-sidebar-ring: hsl(var(--sidebar-ring));
+
+  --font-sans: var(--app-font-sans);
+  --font-serif: var(--app-font-serif);
+  --font-mono: var(--app-font-mono);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+:root {
+  /* Forbes Royal College - Light Mode (Default) */
+  --background: 38 28% 96%;
+  /* Warm parchment #F5EFE4 */
+  --foreground: 217 62% 13%;
+  /* Deep Navy #0C1F3D */
+
+  --border: 217 18% 82%;
+  --input: 217 18% 82%;
+  --ring: 40 62% 47%;
+  /* Antique Gold */
+
+  --card: 40 30% 99%;
+  --card-foreground: 217 62% 13%;
+  --card-border: 217 18% 90%;
+
+  --popover: 40 30% 99%;
+  --popover-foreground: 217 62% 13%;
+  --popover-border: 217 18% 90%;
+
+  /* Primary is Deep Navy */
+  --primary: 217 62% 13%;
+  --primary-foreground: 40 30% 97%;
+
+  /* Secondary is a richer antique gold, paired with navy text for contrast */
+  --secondary: 40 62% 47%;
+  --secondary-foreground: 217 62% 13%;
+
+  --muted: 217 20% 93%;
+  --muted-foreground: 217 20% 40%;
+
+  --accent: 40 55% 92%;
+  --accent-foreground: 217 62% 13%;
+
+  --destructive: 4 62% 42%;
+  --destructive-foreground: 0 0% 100%;
+
+  --chart-1: 40 62% 47%;
+  --chart-2: 217 55% 30%;
+  --chart-3: 152 35% 35%;
+  --chart-4: 350 40% 42%;
+  --chart-5: 280 25% 45%;
+
+  --app-font-sans: 'Public Sans', sans-serif;
+  --app-font-serif: 'Playfair Display', serif;
+  --app-font-mono: Menlo, monospace;
+  --radius: 0.375rem;
+}
+
+.dark {
+  /* Using light mode default to enforce clean institutional look, 
+     but providing dark mode fallbacks if needed */
+  --background: 217 55% 9%;
+  --foreground: 38 30% 94%;
+
+  --border: 217 30% 22%;
+  --input: 217 30% 22%;
+  --ring: 40 62% 47%;
+
+  --card: 217 55% 12%;
+  --card-foreground: 38 30% 94%;
+  --card-border: 217 30% 20%;
+
+  --popover: 217 55% 12%;
+  --popover-foreground: 38 30% 94%;
+  --popover-border: 217 30% 20%;
+
+  --primary: 40 62% 47%;
+  --primary-foreground: 217 62% 13%;
+
+  --secondary: 217 40% 22%;
+  --secondary-foreground: 38 30% 94%;
+
+  --muted: 217 40% 16%;
+  --muted-foreground: 217 18% 68%;
+
+  --accent: 217 40% 16%;
+  --accent-foreground: 38 30% 94%;
+
+  --destructive: 4 55% 48%;
+  --destructive-foreground: 0 0% 100%;
+
+  --chart-1: 40 62% 47%;
+  --chart-2: 217 55% 62%;
+  --chart-3: 152 35% 50%;
+  --chart-4: 350 40% 58%;
+  --chart-5: 280 25% 58%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-serif tracking-tight;
+  }
+
+  button,
+  input,
+  textarea,
+  select {
+    font-family: inherit;
+  }
+}
+
+@layer utilities {
+
+  /* Subtle overlay affordance used by shadcn-derived components (button, toggle, etc). */
+  .hover-elevate,
+  .active-elevate-2 {
+    position: relative;
+  }
+
+  .hover-elevate::after,
+  .active-elevate-2::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    background-color: currentColor;
+    opacity: 0;
+    transition: opacity 0.15s ease;
+  }
+
+  .hover-elevate:hover::after {
+    opacity: 0.06;
+  }
+
+  .active-elevate-2:active::after {
+    opacity: 0.12;
+  }
+}
+
+@media print {
+  @page {
+    margin: 0.5in;
+  }
+
+  body {
+    background: white !important;
+  }
+
+  .print\:hidden {
+    display: none !important;
+  }
+}
