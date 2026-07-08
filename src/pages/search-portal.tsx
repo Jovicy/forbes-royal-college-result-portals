@@ -69,9 +69,6 @@ export function SearchPortal() {
               <h1 className="font-serif text-base sm:text-xl font-bold text-primary-foreground leading-tight">
                 Forbes Royal College
               </h1>
-              <p className="font-sans text-[10px] sm:text-xs text-primary-foreground/60 uppercase tracking-widest font-medium">
-                Est. 2020
-              </p>
             </div>
           </div>
 
@@ -312,7 +309,7 @@ export function SearchPortal() {
                       {/* Stats row */}
                       <motion.div
                         variants={revealItem}
-                        className="grid grid-cols-3 divide-x divide-border border-b border-border bg-white"
+                        className="grid grid-cols-2 divide-x divide-border border-b border-border bg-white"
                       >
                         <div className="text-center py-4 sm:py-6 px-2">
                           <div className="text-[10px] sm:text-xs uppercase tracking-widest text-muted-foreground mb-1 sm:mb-2 font-sans">
@@ -320,14 +317,6 @@ export function SearchPortal() {
                           </div>
                           <div className="font-serif text-2xl sm:text-4xl font-bold text-primary">
                             {result.overallGrade}
-                          </div>
-                        </div>
-                        <div className="text-center py-4 sm:py-6 px-2">
-                          <div className="text-[10px] sm:text-xs uppercase tracking-widest text-muted-foreground mb-1 sm:mb-2 font-sans">
-                            Average Score
-                          </div>
-                          <div className="font-serif text-2xl sm:text-4xl font-bold text-primary">
-                            {result.overallAverage.toFixed(1)}%
                           </div>
                         </div>
                         <div className="flex flex-col items-center justify-center py-4 sm:py-6 px-2 gap-1 sm:gap-1.5">
