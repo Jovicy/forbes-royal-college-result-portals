@@ -39,7 +39,7 @@ export const STUDENTS: StudentResult[] = [
     ],
     overallGrade: "B",
     overallRemark:
-      "A fair performance. Bilal is encouraged to consolidate skills before the term begins.",
+      "Bilal exhibited a brilliant performance in Creative Writing, Comprehension and Social Studies. He requires further efforts to attain ideal standards in Mathematics, Grammar and Science. ",
   },
   {
     id: "FRC-26-20",
@@ -56,7 +56,7 @@ export const STUDENTS: StudentResult[] = [
     ],
     overallGrade: "B",
     overallRemark:
-      "A pleasing performance overall. Hibbatullah is well placed to thrive with continued effort.",
+      "Hibbatullah expresses thoughts with remarkable coherence and creativity in her writing.  Her performance in all subjects is generally commendable, with notable room for improvement in Mathematics.",
   },
   {
     id: "FRC-26-52",
@@ -73,7 +73,7 @@ export const STUDENTS: StudentResult[] = [
     ],
     overallGrade: "C",
     overallRemark:
-      "A fair performance. Khadija is encouraged to consolidate skills before the term begins.",
+      "Khadija recorded tremendous success in her attempts across all aspects of English Language and Social Studies. Significant shortfalls were however observed in Mathematics, requiring targeted interventions to rectify.",
   },
   {
     id: "FRC-26-11",
@@ -90,7 +90,7 @@ export const STUDENTS: StudentResult[] = [
     ],
     overallGrade: "C",
     overallRemark:
-      "A pleasing performance overall. Salima is well placed to thrive with continued effort.",
+      "Salima demonstrates impressive profile in language arts, though she finds numerical concepts challenging.",
   },
   {
     id: "FRC-26-82",
@@ -107,7 +107,7 @@ export const STUDENTS: StudentResult[] = [
     ],
     overallGrade: "B",
     overallRemark:
-      "A good, steady result. Bello shows promise, with room to strengthen certain areas.",
+      "Bello portrayed exceptional skills in core English concepts and mathematics. His performance in other subjects evaluated is also laudable.",
   },
   {
     id: "FRC-26-76",
@@ -124,7 +124,7 @@ export const STUDENTS: StudentResult[] = [
     ],
     overallGrade: "B",
     overallRemark:
-      "A fair performance. Mubashshir is encouraged to consolidate skills before the term begins.",
+      "Mubashir’s performance in language skills, science and social studies is exemplary. With more effort, he will attain optimal levels in Mathematics and Creative Writing as well.",
   },
   {
     id: "FRC-26-25",
@@ -141,7 +141,7 @@ export const STUDENTS: StudentResult[] = [
     ],
     overallGrade: "C",
     overallRemark:
-      "A pleasing performance overall. Musa is well placed to thrive with continued effort.",
+      "Musa portrayed profound levels of fluency in Grammar and Comprehension. He also did appreciably well in Social Studies and Creative Writing. Targeted interventions are however required to revamp his skills in Mathematics and Science.",
   },
   {
     id: "FRC-26-36",
@@ -158,7 +158,7 @@ export const STUDENTS: StudentResult[] = [
     ],
     overallGrade: "D",
     overallRemark:
-      "A very good result. Yasmin shows solid promise and a good foundation to build upon.",
+      "Yasmin displays strong analytical skills in reading comprehension. Though her performance in other subject areas is more modest, she  consistently manage to meet foundational benchmarks across",
   },
   {
     id: "FRC-26-50",
@@ -175,7 +175,7 @@ export const STUDENTS: StudentResult[] = [
     ],
     overallGrade: "C",
     overallRemark:
-      "A highly commendable performance. Zaynab demonstrates consistent strength across subjects.",
+      "Zainab’s performance in English Language is exemplary. However, personalized intervention is needed to favourably accelerate her growth in Mathematics and Science.",
   },
   {
     id: "FRC-26-42",
@@ -192,7 +192,7 @@ export const STUDENTS: StudentResult[] = [
     ],
     overallGrade: "C",
     overallRemark:
-      "A good, steady result. Sakina shows promise, with room to strengthen certain areas.",
+      "Sakina did impressively well in the core areas of language skills evaluated. Her performance in Social Studies is also commendable, while more effort is required to achieve excellence in Mathematics and Science.",
   },
   {
     id: "FRC-26-55",
@@ -209,7 +209,24 @@ export const STUDENTS: StudentResult[] = [
     ],
     overallGrade: "C",
     overallRemark:
-      "An excellent result. Fatima shows strong readiness for the rigours of the College curriculum.",
+      "Fatima achieved significant success in her attempts in language skills. While she shows good potential, extensive support is required to enable her achieve excellence across Mathematics, Science and Social Studies.",
+  },
+  {
+    id: "FRC-26-69",
+    name: "Fatima Muhammad Abdulakarim",
+    class: "Grade 7",
+    term: "Forbes Entrance Exams 2026",
+    subjects: [
+      { name: "Grammar", grade: "B" },
+      { name: "Creative Writing", grade: "D" },
+      { name: "Comprehension", grade: "A" },
+      { name: "Mathematics", grade: "D" },
+      { name: "Science", grade: "D" },
+      { name: "Social Studies", grade: "D" },
+    ],
+    overallGrade: "D",
+    overallRemark:
+      "Fatima excels significantly in literacy and reading comprehension, but struggles to meet standard benchmarks across other disciplines.",
   },
   {
     id: "FRC-26-57",
@@ -226,7 +243,7 @@ export const STUDENTS: StudentResult[] = [
     ],
     overallGrade: "D",
     overallRemark:
-      "A very good result. Fatima shows solid promise and a good foundation to build upon.",
+      "Fatima demonstrates good reading comprehension and strong literacy skills. While she maintains a steady performance across other subjects, her ability to process and understand complex text is a valuable asset for her continued growth.",
   },
   {
     id: "FRC-26-77",
@@ -243,7 +260,7 @@ export const STUDENTS: StudentResult[] = [
     ],
     overallGrade: "C",
     overallRemark:
-      "A good, steady result. Kamil shows promise, with room to strengthen certain areas.",
+      "Kamil recorded impressive success in comprehension, creative writing and grammar. With more committed efforts, shortfalls noted in Mathematics and Science will be effectively neutralized.",
   },
   {
     id: "FRC-26-29",
@@ -260,24 +277,7 @@ export const STUDENTS: StudentResult[] = [
     ],
     overallGrade: "C",
     overallRemark:
-      "A fair performance. Jamila is encouraged to consolidate skills before the term begins.",
-  },
-  {
-    id: "FRC-26-69",
-    name: "Fatima Muhammad Abdulkarim",
-    class: "Grade 7",
-    term: "Forbes Entrance Exams 2026",
-    subjects: [
-      { name: "Grammar", grade: "B" },
-      { name: "Creative Writing", grade: "D" },
-      { name: "Comprehension", grade: "A" },
-      { name: "Mathematics", grade: "D" },
-      { name: "Science", grade: "D" },
-      { name: "Social Studies", grade: "D" },
-    ],
-    overallGrade: "D",
-    overallRemark:
-      "A very good result. Fatima shows solid promise and a good foundation to build upon.",
+      "Jamila demonstrates  strong literacy skills, excelling notably in Grammar and Comprehension. Her performance in Mathematics and Science however requires further refinement to attain desired levels of fluency.",
   },
   {
     id: "FRC-26-65",
@@ -294,7 +294,7 @@ export const STUDENTS: StudentResult[] = [
     ],
     overallGrade: "B",
     overallRemark:
-      "A good, steady result. Ahmad shows promise, with room to strengthen certain areas.",
+      "Ahmad’s performance portrays profound comprehension and grammar skills. He also  demonstrates good potential in Mathematics, Science and Creative Writing with room for improvement.",
   },
   {
     id: "FRC-26-72",
@@ -311,7 +311,7 @@ export const STUDENTS: StudentResult[] = [
     ],
     overallGrade: "B",
     overallRemark:
-      "A pleasing performance overall. Abdallah is well placed to thrive with continued effort.",
+      "Abdallah demonstrated a stellar performance in Comprehension and Grammar. The outcome of his assessment in other subjects is also good, with significant room for improvement in Social Studies. ",
   },
   {
     id: "FRC-26-80",
@@ -328,7 +328,7 @@ export const STUDENTS: StudentResult[] = [
     ],
     overallGrade: "C",
     overallRemark:
-      "A pleasing performance overall. Fadila is well placed to thrive with continued effort.",
+      "Fadila demonstrated commendable ability in Grammar and Comprehension. She also showed good potentials across all other subjects assessed.  ",
   },
   {
     id: "FRC-26-61",
@@ -345,7 +345,7 @@ export const STUDENTS: StudentResult[] = [
     ],
     overallGrade: "A",
     overallRemark:
-      "An excellent result. Jason shows strong readiness for the rigours of the College curriculum.",
+      "Jason's performance reflects remarkable competency across all the subjects assessed. His creative thinking and general cognitive ability is impressive. ",
   },
   {
     id: "FRC-26-66",
@@ -362,7 +362,58 @@ export const STUDENTS: StudentResult[] = [
     ],
     overallGrade: "C",
     overallRemark:
-      "A pleasing performance overall. Ahmad is well placed to thrive with continued effort.",
+      "Ahmad demonstrates advanced reading comprehension skills, but requires targeted intervention to strengthen his weak skills and build confidence in mathematics.",
+  },
+  {
+    id: "FRC-26-38",
+    name: "Fadeel Abdulmalik Duruguwa",
+    class: "Grade 7",
+    term: "Forbes Entrance Exams 2026",
+    subjects: [
+      { name: "Grammar", grade: "B" },
+      { name: "Creative Writing", grade: "C" },
+      { name: "Comprehension", grade: "A" },
+      { name: "Mathematics", grade: "D" },
+      { name: "Science", grade: "C" },
+      { name: "Social Studies", grade: "C" },
+    ],
+    overallGrade: "B",
+    overallRemark:
+      "Fadeel achieved a distinctive performance in Grammar, Comprehension and Social Studies. However, targeted intervention is required to  build confidence in Mathematics.",
+  },
+  {
+    id: "FRC-26-78",
+    name: "Saeed Abdulmalik Duruguwa",
+    class: "Grade 7",
+    term: "Forbes Entrance Exams 2026",
+    subjects: [
+      { name: "Grammar", grade: "A" },
+      { name: "Creative Writing", grade: "B" },
+      { name: "Comprehension", grade: "B" },
+      { name: "Mathematics", grade: "C" },
+      { name: "Science", grade: "B" },
+      { name: "Social Studies", grade: "B" },
+    ],
+    overallGrade: "B",
+    overallRemark:
+      "Saeed’s performance shows a consistent trend of excellence in most subjects assessed. While his achievement in Mathematics is good, he is encouraged to strive for more impressive outcomes.",
+  },
+  {
+    id: "FRC-26-28",
+    name: "Fatima Batul Ibrahim",
+    class: "Grade 7",
+    term: "Forbes Entrance Exams 2026",
+    subjects: [
+      { name: "Grammar", grade: "B" },
+      { name: "Creative Writing", grade: "C" },
+      { name: "Comprehension", grade: "A" },
+      { name: "Mathematics", grade: "C" },
+      { name: "Science", grade: "C" },
+      { name: "Social Studies", grade: "A" },
+    ],
+    overallGrade: "B",
+    overallRemark:
+      "Fatima portrayed outstanding fluency in grammar, comprehension and social studies. With further commitment, she shows a potential to attain excellence in Mathematics and Creative Writing too.",
   },
   {
     id: "FRC-26-59",
@@ -379,7 +430,7 @@ export const STUDENTS: StudentResult[] = [
     ],
     overallGrade: "C",
     overallRemark:
-      "A good, steady result. Hajara shows promise, with room to strengthen certain areas.",
+      "Hajara’s competence in language skills is truly exceptional. We encourage her to diligently nurture her potential in Mathematics and Science to attain further excellence.",
   },
   {
     id: "FRC-26-95",
@@ -396,7 +447,24 @@ export const STUDENTS: StudentResult[] = [
     ],
     overallGrade: "B",
     overallRemark:
-      "A good, steady result. Treasure shows promise, with room to strengthen certain areas.",
+      "Treasure demonstrated commendable ability in most aspects of language skills, science and social studies, with notable room for improvement in creative writing and mathematics.",
+  },
+  {
+    id: "FRC-26-67",
+    name: "Maryam Muhammad Shehu",
+    class: "Grade 7",
+    term: "Forbes Entrance Exams 2026",
+    subjects: [
+      { name: "Grammar", grade: "B" },
+      { name: "Creative Writing", grade: "B" },
+      { name: "Comprehension", grade: "A" },
+      { name: "Mathematics", grade: "D" },
+      { name: "Science", grade: "D" },
+      { name: "Social Studies", grade: "C" },
+    ],
+    overallGrade: "C",
+    overallRemark:
+      "Maryam’s abilities across all aspects of language skills is quite remarkable. However, she requires targeted intervention to  attain desired levels of fluency in Mathematics and Science.",
   },
   {
     id: "FRC-26-89",
@@ -413,7 +481,7 @@ export const STUDENTS: StudentResult[] = [
     ],
     overallGrade: "D",
     overallRemark:
-      "A good, steady result. Abdallah shows promise, with room to strengthen certain areas.",
+      "Abdallah requires comprehensive academic intervention to address widespread gaps and build foundational literacy and numeracy skills.",
   },
   {
     id: "FRC-26-73",
@@ -447,7 +515,7 @@ export const STUDENTS: StudentResult[] = [
     ],
     overallGrade: "D",
     overallRemark:
-      "A very good result. Stephen shows solid promise and a good foundation to build upon.",
+      "Stephen demonstrates strength in creative writing and storytelling. However, he currently shows weak academic performance across other core subjects.",
   },
   {
     id: "FRC-26-18",
@@ -464,7 +532,7 @@ export const STUDENTS: StudentResult[] = [
     ],
     overallGrade: "C",
     overallRemark:
-      "A pleasing performance overall. Alameen is well placed to thrive with continued effort.",
+      "Al-amin portrayed impressive competency in Comprehension and Creative Writing. However, significant effort is required to revamp his skills in Mathematics  and Science to optimal standards. ",
   },
   {
     id: "FRC-26-47",
@@ -481,7 +549,7 @@ export const STUDENTS: StudentResult[] = [
     ],
     overallGrade: "D",
     overallRemark:
-      "A fair performance. Abubakar is encouraged to consolidate skills before the term begins.",
+      "Abubakar  demonstrates good understanding in most subjects, but requires targeted support to build his confidence in English grammar.",
   },
   {
     id: "FRC-26-81",
@@ -498,7 +566,7 @@ export const STUDENTS: StudentResult[] = [
     ],
     overallGrade: "D",
     overallRemark:
-      "A very good result. Fatima shows solid promise and a good foundation to build upon.",
+      "Fatima excels significantly in creative writing tasks and reading comprehension, but struggles to meet standard benchmarks across other disciplines.",
   },
   {
     id: "FRC-26-40",
@@ -514,7 +582,7 @@ export const STUDENTS: StudentResult[] = [
     ],
     overallGrade: "C",
     overallRemark:
-      "A pleasing performance overall. Abdulkareem is well placed to thrive with continued effort.",
+      "Abdulkarim excels significantly in creative writing and civic education. With more committed efforts, he will attain significant improvements in Mathematics and Science.",
   },
   {
     id: "FRC-26-53",
@@ -530,7 +598,7 @@ export const STUDENTS: StudentResult[] = [
     ],
     overallGrade: "C",
     overallRemark:
-      "A very good result. Hauwa shows solid promise and a good foundation to build upon.",
+      "Hauwa demonstrated impressive skills in Grammar, Creative Writing, Science and Civic Studies. While she shows good potential in Mathematics, significant effort is required to achieve more excellent outcomes.",
   },
   {
     id: "FRC-26-71",
@@ -546,7 +614,7 @@ export const STUDENTS: StudentResult[] = [
     ],
     overallGrade: "C",
     overallRemark:
-      "A good, steady result. Auwal shows promise, with room to strengthen certain areas.",
+      "Auwal did commendably well in Civic Studies and shows good potential in Creative Writing, Grammar and Science. However, he requires extensive support to neutralize challenges observed in Mathematics. ",
   },
 ];
 
