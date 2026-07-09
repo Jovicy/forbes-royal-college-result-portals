@@ -1,5 +1,5 @@
 import React from "react";
-import { Search, BookOpen, ChevronRight, XCircle, Printer } from "lucide-react";
+import { Search, BookOpen, ChevronRight, XCircle, Printer, CheckCircle2 } from "lucide-react";
 import Logo from "@/assets/favicon.png";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -419,11 +419,14 @@ export function SearchPortal() {
 
                       {/* Placement remark */}
                       <motion.div variants={revealItem} className="px-5 sm:px-8 pb-5 sm:pb-6">
-                        <div className="bg-primary/5 border-l-4 border-primary rounded-r-lg p-4 sm:p-5">
-                          <h4 className="text-[10px] sm:text-xs uppercase tracking-widest text-primary font-bold mb-2">
-                            Admission Placement Status
-                          </h4>
-                          <p className="font-sans text-sm sm:text-base text-primary leading-relaxed">
+                        <div className="bg-emerald-50 border-l-4 border-emerald-600 rounded-r-lg p-4 sm:p-5">
+                          <div className="flex items-center gap-2 mb-2">
+                            <CheckCircle2 size={14} className="text-emerald-600 shrink-0" />
+                            <h4 className="text-[10px] sm:text-xs uppercase tracking-widest text-emerald-800 font-bold">
+                              Admission Placement Status
+                            </h4>
+                          </div>
+                          <p className="font-sans text-sm sm:text-base text-emerald-950 leading-relaxed">
                             {result.placementRemark}
                           </p>
                         </div>
