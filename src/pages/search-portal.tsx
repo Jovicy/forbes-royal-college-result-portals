@@ -1,5 +1,5 @@
 import React from "react";
-import { Search, BookOpen, ChevronRight, XCircle, Printer, CheckCircle2 } from "lucide-react";
+import { Search, BookOpen, ChevronRight, XCircle, Printer } from "lucide-react";
 import Logo from "@/assets/favicon.png";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -307,7 +307,7 @@ export function SearchPortal() {
                       </motion.div>
 
                       {/* Stats row */}
-                      <motion.div
+                      {/* <motion.div
                         variants={revealItem}
                         className="grid grid-cols-2 divide-x divide-border border-b border-border bg-white"
                       >
@@ -331,7 +331,7 @@ export function SearchPortal() {
                             Verified
                           </div>
                         </div>
-                      </motion.div>
+                      </motion.div> */}
 
                       {/* Subjects Table */}
                       <motion.div variants={revealItem} className="px-5 sm:px-8 pt-5 sm:pt-6">
