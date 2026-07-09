@@ -84,37 +84,62 @@ export function SearchPortal() {
 
       {/* Grading Scale Modal */}
       <Dialog open={showGrading} onOpenChange={setShowGrading}>
-        <DialogContent className="max-w-3xl max-h-[85vh] overflow-y-auto p-0 gap-0 print:hidden">
-          <div className="px-5 sm:px-8 py-8 sm:py-10 space-y-8 sm:space-y-10">
-            <div className="text-center space-y-3 sm:space-y-4">
-              <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-accent border border-border flex items-center justify-center text-primary mx-auto">
-                <BookOpen size={24} />
+        <DialogContent className="w-[calc(100%-2rem)] sm:w-full max-w-3xl max-h-[85vh] overflow-y-auto p-0 gap-0 print:hidden rounded-lg">
+          <div className="px-4 sm:px-8 py-6 sm:py-10 space-y-6 sm:space-y-10">
+            <div className="text-center space-y-2 sm:space-y-4">
+              <div className="w-10 h-10 sm:w-14 sm:h-14 rounded-full bg-accent border border-border flex items-center justify-center text-primary mx-auto">
+                <BookOpen size={20} className="sm:w-6 sm:h-6" />
               </div>
-              <h3 className="font-serif text-2xl sm:text-3xl font-bold text-primary">Academic Grading System</h3>
-              <p className="font-sans text-muted-foreground text-sm sm:text-base max-w-xl mx-auto">
+              <h3 className="font-serif text-xl sm:text-3xl font-bold text-primary leading-tight">
+                Academic Grading System
+              </h3>
+              <p className="font-sans text-muted-foreground text-xs sm:text-base max-w-xl mx-auto px-2 sm:px-0">
                 Forbes Royal College employs a rigorous evaluation standard to ensure excellence. Below is the
                 official grading scale used for all evaluations.
               </p>
             </div>
 
             <Card className="overflow-hidden border-border shadow-sm">
-              <div className="px-5 sm:px-6 py-4 border-b border-border bg-white">
-                <h4 className="font-serif text-base sm:text-lg font-bold text-primary">
+              <div className="px-4 sm:px-6 py-3 sm:py-4 border-b border-border bg-white">
+                <h4 className="font-serif text-sm sm:text-lg font-bold text-primary">
                   Standard Assessment Scale
                 </h4>
-                <p className="font-sans text-xs sm:text-sm text-muted-foreground">Applicable to all senior secondary subjects</p>
+                <p className="font-sans text-[11px] sm:text-sm text-muted-foreground">
+                  Applicable to all senior secondary subjects
+                </p>
               </div>
-              <div className="overflow-x-auto">
-                <table className="w-full text-left border-collapse min-w-95 font-sans">
+
+              {/* Mobile: stacked cards (no horizontal scroll needed) */}
+              <div className="sm:hidden divide-y divide-border bg-white">
+                {GRADING_SCALE.map((g) => (
+                  <div key={g.grade} className="flex items-center gap-3 px-4 py-3">
+                    <span className="shrink-0 inline-flex items-center justify-center w-8 h-8 rounded bg-primary text-primary-foreground font-serif font-bold text-sm">
+                      {g.grade}
+                    </span>
+                    <div className="min-w-0 flex-1">
+                      <p className="font-mono text-sm text-primary">
+                        {g.min}&ndash;{g.max}%
+                      </p>
+                      <p className="text-xs text-muted-foreground truncate">
+                        {g.remark}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {/* sm and up: full table */}
+              <div className="hidden sm:block overflow-x-auto">
+                <table className="w-full text-left border-collapse font-sans">
                   <thead>
                     <tr className="bg-accent/60 border-b border-border">
-                      <th className="py-3 px-5 sm:px-6 font-medium text-[10px] sm:text-xs uppercase tracking-widest text-muted-foreground">
+                      <th className="py-3 px-6 font-medium text-xs uppercase tracking-widest text-muted-foreground">
                         Letter Grade
                       </th>
-                      <th className="py-3 px-5 sm:px-6 font-medium text-[10px] sm:text-xs uppercase tracking-widest text-muted-foreground">
+                      <th className="py-3 px-6 font-medium text-xs uppercase tracking-widest text-muted-foreground">
                         Score Range
                       </th>
-                      <th className="py-3 px-5 sm:px-6 font-medium text-[10px] sm:text-xs uppercase tracking-widest text-muted-foreground">
+                      <th className="py-3 px-6 font-medium text-xs uppercase tracking-widest text-muted-foreground">
                         Description
                       </th>
                     </tr>
@@ -122,15 +147,15 @@ export function SearchPortal() {
                   <tbody className="divide-y divide-border bg-white">
                     {GRADING_SCALE.map((g) => (
                       <tr key={g.grade}>
-                        <td className="py-3 sm:py-4 px-5 sm:px-6">
-                          <span className="inline-flex items-center justify-center w-8 h-8 sm:w-9 sm:h-9 rounded bg-primary text-primary-foreground font-serif font-bold text-sm sm:text-base">
+                        <td className="py-4 px-6">
+                          <span className="inline-flex items-center justify-center w-9 h-9 rounded bg-primary text-primary-foreground font-serif font-bold text-base">
                             {g.grade}
                           </span>
                         </td>
-                        <td className="py-3 sm:py-4 px-5 sm:px-6 font-mono text-sm sm:text-base text-primary">
+                        <td className="py-4 px-6 font-mono text-base text-primary">
                           {g.min} &ndash; {g.max}%
                         </td>
-                        <td className="py-3 sm:py-4 px-5 sm:px-6 text-sm sm:text-base text-muted-foreground">
+                        <td className="py-4 px-6 text-base text-muted-foreground">
                           {g.remark}
                         </td>
                       </tr>
@@ -140,11 +165,11 @@ export function SearchPortal() {
               </div>
             </Card>
 
-            <div className="bg-accent/50 border border-border rounded-lg p-5 sm:p-6 text-center">
-              <h4 className="font-serif text-base sm:text-lg font-bold text-primary mb-2">
+            <div className="bg-accent/50 border border-border rounded-lg p-4 sm:p-6 text-center">
+              <h4 className="font-serif text-sm sm:text-lg font-bold text-primary mb-1.5 sm:mb-2">
                 Need clarification on your result?
               </h4>
-              <p className="font-sans text-xs sm:text-sm text-muted-foreground max-w-xl mx-auto">
+              <p className="font-sans text-[11px] sm:text-sm text-muted-foreground max-w-xl mx-auto">
                 If you have questions regarding your evaluation or believe there has been a computation error,
                 please contact your form teacher or the academic office within 14 days of result publication.
               </p>
@@ -388,6 +413,18 @@ export function SearchPortal() {
                           </h4>
                           <p className="font-serif text-base sm:text-lg italic text-primary leading-relaxed">
                             "{result.overallRemark}"
+                          </p>
+                        </div>
+                      </motion.div>
+
+                      {/* Placement remark */}
+                      <motion.div variants={revealItem} className="px-5 sm:px-8 pb-5 sm:pb-6">
+                        <div className="bg-primary/5 border-l-4 border-primary rounded-r-lg p-4 sm:p-5">
+                          <h4 className="text-[10px] sm:text-xs uppercase tracking-widest text-primary font-bold mb-2">
+                            Admission Placement Status
+                          </h4>
+                          <p className="font-sans text-sm sm:text-base text-primary leading-relaxed">
+                            {result.placementRemark}
                           </p>
                         </div>
                       </motion.div>
