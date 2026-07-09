@@ -16,11 +16,10 @@ export interface StudentResult {
 export const CURRENT_TERM = "Forbes Entrance Exams 2026";
 export const TOTAL_STUDENTS = 31;
 export const GRADING_SCALE = [
-  { grade: "A", min: 80, max: 100, remark: "Excellent" },
-  { grade: "B", min: 70, max: 79, remark: "Very Good" },
-  { grade: "C", min: 60, max: 69, remark: "Good" },
-  { grade: "D", min: 50, max: 59, remark: "Fair" },
-  { grade: "F", min: 0, max: 49, remark: "Fail" },
+  { grade: "A", min: 80, max: 100, remark: "Higher Distinction / Excellent" },
+  { grade: "B", min: 60, max: 79, remark: "Lower Distinction / Very Good" },
+  { grade: "C", min: 40, max: 59, remark: "Credit" },
+  { grade: "D", min: 0, max: 39, remark: "Pass" },
 ];
 
 export const STUDENTS: StudentResult[] = [
@@ -60,7 +59,7 @@ export const STUDENTS: StudentResult[] = [
   },
   {
     id: "FRC-26-52",
-    name: "Khadeeja Basheer",
+    name: "Khadeeja Bashir",
     class: "Grade 7",
     term: "Forbes Entrance Exams 2026",
     subjects: [
@@ -90,7 +89,7 @@ export const STUDENTS: StudentResult[] = [
     ],
     overallGrade: "C",
     overallRemark:
-      "Salima demonstrates impressive profile in language arts, though she finds numerical concepts challenging.",
+      "Salima demonstrated impressive fluency in Creative Writing and Comprehension. She also did appreciably well in other subjects assessed, although extensive support is needed to groom her mathematics skills to optimal standards.",
   },
   {
     id: "FRC-26-82",
@@ -111,7 +110,7 @@ export const STUDENTS: StudentResult[] = [
   },
   {
     id: "FRC-26-76",
-    name: "Mubashir Abdulrahman Liman",
+    name: "Mubashsir Abdulrahman",
     class: "Grade 7",
     term: "Forbes Entrance Exams 2026",
     subjects: [
@@ -145,7 +144,7 @@ export const STUDENTS: StudentResult[] = [
   },
   {
     id: "FRC-26-36",
-    name: "Yasmin T. Musa",
+    name: "Yasmin Tanimu",
     class: "Grade 7",
     term: "Forbes Entrance Exams 2026",
     subjects: [
@@ -158,11 +157,11 @@ export const STUDENTS: StudentResult[] = [
     ],
     overallGrade: "D",
     overallRemark:
-      "Yasmin displays strong analytical skills in reading comprehension. Though her performance in other subject areas is more modest, she  consistently manage to meet foundational benchmarks across",
+      "Yasmin displayed an impressive ability to analyze written text and did appreciably well in Grammar. However, her performance in other subjects assessed falls significantly short of ideal standards",
   },
   {
     id: "FRC-26-50",
-    name: "Zainab Sanusi Bala",
+    name: "Zaynab Sanusi Bala",
     class: "Grade 7",
     term: "Forbes Entrance Exams 2026",
     subjects: [
@@ -196,7 +195,7 @@ export const STUDENTS: StudentResult[] = [
   },
   {
     id: "FRC-26-55",
-    name: "Fatima A. Tafida",
+    name: "Fatima Abdulrasheed Tafida",
     class: "Grade 7",
     term: "Forbes Entrance Exams 2026",
     subjects: [
@@ -213,7 +212,7 @@ export const STUDENTS: StudentResult[] = [
   },
   {
     id: "FRC-26-69",
-    name: "Fatima Muhammad Abdulakarim",
+    name: "Fatima Mohammed Abdulakarim",
     class: "Grade 7",
     term: "Forbes Entrance Exams 2026",
     subjects: [
@@ -226,7 +225,7 @@ export const STUDENTS: StudentResult[] = [
     ],
     overallGrade: "D",
     overallRemark:
-      "Fatima excels significantly in literacy and reading comprehension, but struggles to meet standard benchmarks across other disciplines.",
+      "Fatima’s showed commendable skill in Grammar and Comprehension. However, her performance across all other subjects evaluated reveal significant skill gaps, requiring extensive support to bridge. ",
   },
   {
     id: "FRC-26-57",
@@ -243,7 +242,7 @@ export const STUDENTS: StudentResult[] = [
     ],
     overallGrade: "D",
     overallRemark:
-      "Fatima demonstrates good reading comprehension and strong literacy skills. While she maintains a steady performance across other subjects, her ability to process and understand complex text is a valuable asset for her continued growth.",
+      "Fatima demonstrated exceptional skill in Comprehension and Grammar. However, she will require personalized intervention in Mathematics and Science to neutralize challenges observed. ",
   },
   {
     id: "FRC-26-77",
@@ -315,7 +314,7 @@ export const STUDENTS: StudentResult[] = [
   },
   {
     id: "FRC-26-80",
-    name: "Fadila Ali Abba",
+    name: "Fadila Aliyu Abba",
     class: "Grade 7",
     term: "Forbes Entrance Exams 2026",
     subjects: [
@@ -332,7 +331,7 @@ export const STUDENTS: StudentResult[] = [
   },
   {
     id: "FRC-26-61",
-    name: "Jason Yablabu'ul Yabilsu",
+    name: "Jason Yadlaku'ul Yabilsu",
     class: "Grade 7",
     term: "Forbes Entrance Exams 2026",
     subjects: [
@@ -345,7 +344,7 @@ export const STUDENTS: StudentResult[] = [
     ],
     overallGrade: "A",
     overallRemark:
-      "Jason's performance reflects remarkable competency across all the subjects assessed. His creative thinking and general cognitive ability is impressive. ",
+      "Jason's performance reflects remarkable competency across all the subjects assessed. His creative thinking and general cognitive ability is impressive.",
   },
   {
     id: "FRC-26-66",
@@ -362,7 +361,7 @@ export const STUDENTS: StudentResult[] = [
     ],
     overallGrade: "C",
     overallRemark:
-      "Ahmad demonstrates advanced reading comprehension skills, but requires targeted intervention to strengthen his weak skills and build confidence in mathematics.",
+      "Ahmad portrayed commendable skill in Comprehension and performed reasonably well in Grammar. Significant shortfalls were however noted in Creative Writing, Science and Social Studies. With personalized support, he will attain excellence.",
   },
   {
     id: "FRC-26-38",
@@ -400,7 +399,7 @@ export const STUDENTS: StudentResult[] = [
   },
   {
     id: "FRC-26-28",
-    name: "Fatima Batul Ibrahim",
+    name: "Fatima Batula Ibrahim",
     class: "Grade 7",
     term: "Forbes Entrance Exams 2026",
     subjects: [
@@ -417,7 +416,7 @@ export const STUDENTS: StudentResult[] = [
   },
   {
     id: "FRC-26-59",
-    name: "Hajara Abdulaziz Kazir",
+    name: "Hajara Abdulazeez Kazir",
     class: "Grade 7",
     term: "Forbes Entrance Exams 2026",
     subjects: [
@@ -434,7 +433,7 @@ export const STUDENTS: StudentResult[] = [
   },
   {
     id: "FRC-26-95",
-    name: "Treasure S. Bazo",
+    name: "Treasure Silaemka Bazo",
     class: "Grade 7",
     term: "Forbes Entrance Exams 2026",
     subjects: [
@@ -447,7 +446,7 @@ export const STUDENTS: StudentResult[] = [
     ],
     overallGrade: "B",
     overallRemark:
-      "Treasure demonstrated commendable ability in most aspects of language skills, science and social studies, with notable room for improvement in creative writing and mathematics.",
+      "Treasure demonstrated commendable ability in most aspects of language skills, science and social studies, with notable room for improvement in creative writing and mathematics. ",
   },
   {
     id: "FRC-26-67",
@@ -481,11 +480,11 @@ export const STUDENTS: StudentResult[] = [
     ],
     overallGrade: "D",
     overallRemark:
-      "Abdallah requires comprehensive academic intervention to address widespread gaps and build foundational literacy and numeracy skills.",
+      "Abdallah is commended for his effort to attempt questions across all subjects assessed. Our findings reveal that he requires comprehensive academic intervention to address widespread gaps and build foundational literacy and numeracy skills.",
   },
   {
     id: "FRC-26-73",
-    name: "Muhammad Ashraf Yunusa",
+    name: "Muhammad Yunusa",
     class: "Grade 7",
     term: "Forbes Entrance Exams 2026",
     subjects: [
@@ -498,11 +497,11 @@ export const STUDENTS: StudentResult[] = [
     ],
     overallGrade: "D",
     overallRemark:
-      "A pass mark overall. Muhammad should focus on strengthening foundational skills ahead of admission.",
+      "Ashraf is commended for his effort to attempt questions across all subjects assessed. Nonetheless, he requires personalized academic support, particularly in math, science, and comprehension, to rectify foundational mlearning gaps and favourably accelerate his growth",
   },
   {
     id: "FRC-26-43",
-    name: "Stephen A. Musa",
+    name: "Stephen Abana Musa",
     class: "Grade 7",
     term: "Forbes Entrance Exams 2026",
     subjects: [
@@ -515,11 +514,11 @@ export const STUDENTS: StudentResult[] = [
     ],
     overallGrade: "D",
     overallRemark:
-      "Stephen demonstrates strength in creative writing and storytelling. However, he currently shows weak academic performance across other core subjects.",
+      "Stephen’s attempt in Creative Writing and Comprehension was quite good. The outcome of his assessment in Grammar, Math and Social Studies reflect extensive shortfalls, requiring significant support to neutralize.",
   },
   {
     id: "FRC-26-18",
-    name: "Al-Amin Usman Maigari",
+    name: "Alameen Usman",
     class: "Grade 7",
     term: "Forbes Entrance Exams 2026",
     subjects: [
@@ -532,7 +531,7 @@ export const STUDENTS: StudentResult[] = [
     ],
     overallGrade: "C",
     overallRemark:
-      "Al-amin portrayed impressive competency in Comprehension and Creative Writing. However, significant effort is required to revamp his skills in Mathematics  and Science to optimal standards. ",
+      "Alameen portrayed impressive competency in Comprehension and Creative Writing. However, significant effort is required to revamp his skills in Mathematics  and Science to optimal standards. ",
   },
   {
     id: "FRC-26-47",
@@ -549,7 +548,7 @@ export const STUDENTS: StudentResult[] = [
     ],
     overallGrade: "D",
     overallRemark:
-      "Abubakar  demonstrates good understanding in most subjects, but requires targeted support to build his confidence in English grammar.",
+      "Abubakar’s conversance with Comprehension is quite good. He also demonstrated remarkable ability in Math, Science and Social Studies. His Grammar skills however require extensive refinement.",
   },
   {
     id: "FRC-26-81",
@@ -566,11 +565,11 @@ export const STUDENTS: StudentResult[] = [
     ],
     overallGrade: "D",
     overallRemark:
-      "Fatima excels significantly in creative writing tasks and reading comprehension, but struggles to meet standard benchmarks across other disciplines.",
+      "Fatima excelled tremendously in Creative Writing and Comprehension, but struggled to meet standard benchmarks across other disciplines evaluated.",
   },
   {
     id: "FRC-26-40",
-    name: "Abdulkarim Murtala",
+    name: "Abdulkareem Murtala",
     class: "Grade 10",
     term: "Forbes Entrance Exams 2026",
     subjects: [
@@ -582,7 +581,7 @@ export const STUDENTS: StudentResult[] = [
     ],
     overallGrade: "C",
     overallRemark:
-      "Abdulkarim excels significantly in creative writing and civic education. With more committed efforts, he will attain significant improvements in Mathematics and Science.",
+      "Abdulkareem excels significantly in creative writing and civic education. With more committed efforts, he will attain significant improvements in Mathematics and Science.",
   },
   {
     id: "FRC-26-53",

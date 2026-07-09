@@ -439,7 +439,7 @@ export function SearchPortal() {
       <footer className="border-t border-border bg-primary py-6 sm:py-8 mt-auto z-10 print:hidden">
         <div className="container mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-2 text-xs sm:text-sm text-white/60 text-center md:text-left">
           <p className="font-sans">&copy; {new Date().getFullYear()} Forbes Royal College. All rights reserved.</p>
-          <div className="font-serif italic mt-1 md:mt-0 text-secondary/90">"Excellence in Character and Learning"</div>
+          <div className="font-serif italic mt-1 md:mt-0 text-secondary/90">"Redefining Education Priorities"</div>
         </div>
       </footer>
     </div>
