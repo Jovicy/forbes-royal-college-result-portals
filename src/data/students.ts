@@ -231,7 +231,7 @@ export const STUDENTS: StudentResult[] = [
     overallRemark:
       "Fatima achieved significant success in her attempts in language skills. While she shows good potential, extensive support is required to enable her achieve excellence across Mathematics, Science and Social Studies.",
     placementRemark:
-      "Placement recommendation pending — not listed in current records. Please confirm.",
+      "Conclusively, a provisional placement in Grade 7 is recommended while we continue to support her as she strives to excel.",
   },
   {
     id: "FRC-26-69",
@@ -364,7 +364,7 @@ export const STUDENTS: StudentResult[] = [
     overallRemark:
       "Fadila demonstrated commendable ability in Grammar and Comprehension. She also showed good potentials across all other subjects assessed.  ",
     placementRemark:
-      "Placement recommendation pending — not listed in current records. Please confirm.",
+      "Conclusively, a provisional placement in Grade 7 is recommended, but it is conditional upon a review of her performance",
   },
   {
     id: "FRC-26-61",
